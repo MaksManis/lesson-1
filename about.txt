@@ -1,0 +1,99 @@
+Первая часть первого  ДЗ  ))
+Linux terminal (GitBash) commands
+
+1) Посмотреть где я
+pwd
+
+2) Создать папку
+mkdir Starship
+
+3) Зайти в папку
+cd Starship
+
+4) Создать 3 папки
+mkdir Fregat
+mkdir Destroyer
+mkdir Cruiser
+
+5) Зайти в любоую папку
+cd Fregat
+
+6) Создать 5 файлов (3 txt, 2 json)
+touch heron.txt
+touch atron.txt
+touch bantam.txt
+touch griffin.json
+touch garmur.json
+
+7) Создать 3 папки
+mkdir Crucifier
+mkdir Maulus
+mkdir Vigil
+
+8. Вывести список содержимого папки
+ls -la
+
+9) + Открыть любой txt файл
+vim atron.txt
+
+10) + написать туда что-нибудь, любой текст.
+"I"
+Powergrid - 37 mv
+CPU - 147 tf
+Armor - 350 HP
+Shield - 300 hp
+
+11) + сохранить и выйти.
+"Esc">":">"wq">"enter"
+
+12) Выйти из папки на уровень выше
+cd ..
+
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.
+mv Fregat/atron.txt Destroyer/atron.txt
+mv Fregat/griffin.json Destroyer/griffin.json
+
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.
+cp Fregat/heron.txt Destroyer/heron.txt
+cp Fregat/garmur.json Destroyer/garmur.json
+
+15) Найти файл по имени
+find -name atron.txt
+
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+17) вывести несколько первых строк из текстового файла
+grep 'tf' atron.txt
+grep -i 'powergrid' atron.txt
+
+18) вывести несколько последних строк из текстового файла
+grep -i 'hp' atron.txt
+
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.
+ls -l|less
+
+20) вывести дату и время
+date
+
+Задание *
+1) Отправить http запрос на сервер.
+curl http://162.55.220.72:5006/terminal-hw-request
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+#!/bin/bash
+cd starship
+mkdir BattleCruiser
+mkdir Battleship
+mkdir Dreadnought
+cd Battleship
+touch Abaddon.txt
+touch Raven.txt
+touch Megathron.txt
+touch Tempest.json
+touch Rattlesnake.json
+mkdir Barghest
+mkdir Bhaalgorn
+mkdir Machariel
+ls -l
+mv Abaddon.txt Barghest/Abaddon.txt
+mv Raven.txt Barghest/Raven.txt
