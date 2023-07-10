@@ -62,6 +62,8 @@ cp Fregat/garmur.json Destroyer/garmur.json
 find -name atron.txt
 
 16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+tail
+
 17) вывести несколько первых строк из текстового файла
 grep 'tf' atron.txt
 grep -i 'powergrid' atron.txt
